@@ -226,3 +226,4 @@ windows/xds/*
 include/GL/glcorearb.h
 include/GL/gl3w.h
 *.autosave
+external/*

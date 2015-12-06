@@ -1,7 +1,7 @@
 class DSP : public IOHW {
 
 public:
-	DSP::DSP(KKernel * kernel);
+	DSP(KKernel * kernel);
 	u8 Read8(u32 addr);
 	u16 Read16(u32 addr);
 	u32 Read32(u32 addr);
