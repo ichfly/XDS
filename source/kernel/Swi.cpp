@@ -647,6 +647,7 @@ void ProcessSwi(u8 swi, u32 Reg[15], KThread * currentThread)
 #ifdef SWILOG
                 LOG("Process %s thread %u WaitSynchronizationN (%08x %08x %08x | %08x %08x) stub + not 100 correct", currentThread->m_owner->GetName(), currentThread->m_thread_id, pointer, handleCount, waitall, Reg[0], Reg[1]);
 #endif
+                delete list;
                 return;
             }
             KSynchronizationObject* th = (KSynchronizationObject*)*currentThread->m_owner->GetHandleTable()->GetHandle<KSynchronizationObject>(handle);
@@ -1387,6 +1388,7 @@ void ProcessSwi(u8 swi, u32 Reg[15], KThread * currentThread)
 #ifdef SWILOG
                 LOG("Process %s thread %u ReplyAndReceive (%08x %08x %08x | %08x %08x) stub + not 100 correct", currentThread->m_owner->GetName(), currentThread->m_thread_id, pointer, handleCount, replyTarget, Reg[0], Reg[1]);
 #endif
+                delete list;
                 return;
             }
             KSynchronizationObject* th = (KSynchronizationObject*)*currentThread->m_owner->GetHandleTable()->GetHandle<KSynchronizationObject>(handle);

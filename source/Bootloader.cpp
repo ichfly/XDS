@@ -260,6 +260,7 @@ KProcess* Boot_LoadFileFast(FILE* fd, u32 offset, u32* out_offset, KKernel * Ker
                 XDSERROR("data data block allocation failed.");
                 free(code);
                 free(sec);
+                free(rodata);
                 return NULL;
             }
             memset(data, 0, datasize);
