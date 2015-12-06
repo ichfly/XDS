@@ -1,0 +1,4 @@
+class MainWindow {
+public:
+    MainWindow();
+};

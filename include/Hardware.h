@@ -1,0 +1,12 @@
+#pragma once
+#include "hardware/IO.h"
+#include "hardware/IPC.h"
+#include "hardware/HASH.h"
+#include "hardware/I2C.h"
+#include "hardware/GPIO.h"
+#include "hardware/PDN.h"
+#include "hardware/SPI.h"
+#include "hardware/DSP.h"
+#include "hardware/GPU.h"
+#include "hardware/HID.h"
+#include "hardware/MIC.h"
