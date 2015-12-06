@@ -1,0 +1,18 @@
+// Copyright 2014 Citra Emulator Project
+// Licensed under GPLv2 or any later version
+// Refer to the license.txt file included.
+
+#pragma once
+
+#include "citraimport\GPU\video_core/shader/shader.h"
+
+namespace Pica {
+
+namespace Shader {
+
+template<bool Debug>
+void RunInterpreter(UnitState<Debug>& state);
+
+} // namespace
+
+} // namespace
