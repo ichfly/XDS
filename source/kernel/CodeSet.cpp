@@ -237,7 +237,7 @@ bool KCodeSet::Patch()
 		u8* data = new u8[sz];
 		fread(data, sz, 1, f);
 		LoadElfFile(data);
-		delete data;
+		delete[] data;
 		fclose(f);
 		return true;
 	}

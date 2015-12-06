@@ -460,7 +460,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		resdata[0] = 0x00130040;
 		resdata[1] = 0x00000000;
 		resdata[2] = 0x00000000; //u8
-		delete str;
+		delete[] str;
 		break;
 	}
 	case 0x16: //CloseArchive
