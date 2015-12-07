@@ -7,7 +7,7 @@
 #include <vector>
 #include <string>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 class DebugInterface;
 

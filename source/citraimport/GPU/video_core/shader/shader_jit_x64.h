@@ -4,12 +4,12 @@
 
 #pragma once
 
-#include <citraimport\nihstro/shader_bytecode.h>
+#include <citraimport/nihstro/shader_bytecode.h>
 
-#include "citraimport\common/x64/emitter.h"
+#include "citraimport/common/x64/emitter.h"
 
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/shader/shader.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/shader/shader.h"
 
 using nihstro::Instruction;
 using nihstro::OpCode;

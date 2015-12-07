@@ -7,20 +7,20 @@
 
 //#include <glad/glad.h>
 
-#include "citraimport\common/color.h"
-#include "citraimport\common/math_util.h"
-#include "citraimport\common/microprofile.h"
-#include "citraimport\common/profiler.h"
+#include "citraimport/common/color.h"
+#include "citraimport/common/math_util.h"
+#include "citraimport/common/microprofile.h"
+#include "citraimport/common/profiler.h"
 
 
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/utils.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_rasterizer.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_shaders.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_shader_util.h"
-#include "citraimport\GPU\video_core/renderer_opengl/pica_to_gl.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/utils.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_rasterizer.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_shaders.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_shader_util.h"
+#include "citraimport/GPU/video_core/renderer_opengl/pica_to_gl.h"
 
-#include "citraimport\settings.h"
+#include "citraimport/settings.h"
 
 u8* Mem_GetPhysicalPointer(u32 addr);
 
@@ -146,7 +146,7 @@ void RasterizerOpenGL::InitObjects() {
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, fb_color_texture.texture.handle, 0);
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, fb_depth_texture.texture.handle, 0);
 
-    assert(glCheckFramebufferStatus(GL_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE,
+    ASSERT_MSG(glCheckFramebufferStatus(GL_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE,
                "OpenGL rasterizer framebuffer setup failed, status %X", glCheckFramebufferStatus(GL_FRAMEBUFFER));
 }
 

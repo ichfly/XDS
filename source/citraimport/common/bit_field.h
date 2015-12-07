@@ -36,7 +36,7 @@
 #include <limits>
 #include <type_traits>
 
-#include "citraimport\common/common_funcs.h"
+#include "citraimport/common/common_funcs.h"
 
 /*
  * Abstract bitfield class

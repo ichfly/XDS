@@ -5,9 +5,9 @@
 #include <algorithm>
 #include <vector>
 
-#include "log.h"
+#include "Log.h"
 
-#include "citraimport\GPU\video_core/renderer_opengl/gl_shader_util.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_shader_util.h"
 
 namespace ShaderUtil {
 

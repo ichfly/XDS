@@ -2,8 +2,8 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
-#include "citraimport\common/break_points.h"
-#include "citraimport\common/logging/log.h"
+#include "citraimport/common/break_points.h"
+#include "citraimport/common/logging/log.h"
 
 #include <sstream>
 #include <algorithm>

@@ -12,22 +12,22 @@ using namespace std;
 
 #include <cassert>
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/emu_window.h"
-#include "citraimport\common/logging/log.h"
-#include "citraimport\common/profiler_reporting.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/emu_window.h"
+#include "citraimport/common/logging/log.h"
+#include "citraimport/common/profiler_reporting.h"
 
-#include "citraimport\GPU\video_core/video_core.h"
-#include "citraimport\GPU\video_core/debug_utils/debug_utils.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_rasterizer.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_shader_util.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_shaders.h"
-#include "citraimport\GPU\video_core/renderer_opengl/renderer_opengl.h"
+#include "citraimport/GPU/video_core/video_core.h"
+#include "citraimport/GPU/video_core/debug_utils/debug_utils.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_rasterizer.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_shader_util.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_shaders.h"
+#include "citraimport/GPU/video_core/renderer_opengl/renderer_opengl.h"
 
-#include "citraimport\settings.h"
+#include "citraimport/settings.h"
 
-#include "citraimport\GPU\HW\lcd.h"
-#include "citraimport\GPU\HW\hw.h"
+#include "citraimport/GPU/HW/lcd.h"
+#include "citraimport/GPU/HW/hw.h"
 
 //import
 u8* Mem_GetPhysicalPointer(u32 addr);

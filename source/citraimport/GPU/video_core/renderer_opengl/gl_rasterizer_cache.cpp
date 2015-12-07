@@ -4,15 +4,15 @@
 
 #define NOMINMAX
 
-#include "citraimport\common/hash.h"
-#include "citraimport\common/make_unique.h"
-#include "citraimport\common/math_util.h"
-#include "citraimport\common/microprofile.h"
-#include "citraimport\common/vector_math.h"
+#include "citraimport/common/hash.h"
+#include "citraimport/common/make_unique.h"
+#include "citraimport/common/math_util.h"
+#include "citraimport/common/microprofile.h"
+#include "citraimport/common/vector_math.h"
 
-#include "citraimport\GPU\video_core/debug_utils/debug_utils.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_rasterizer_cache.h"
-#include "citraimport\GPU\video_core/renderer_opengl/pica_to_gl.h"
+#include "citraimport/GPU/video_core/debug_utils/debug_utils.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_rasterizer_cache.h"
+#include "citraimport/GPU/video_core/renderer_opengl/pica_to_gl.h"
 
 u8* Mem_GetPhysicalPointer(u32 addr);
 

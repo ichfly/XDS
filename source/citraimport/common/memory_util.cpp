@@ -3,14 +3,14 @@
 // Refer to the license.txt file included.
 
 
-#include "citraimport\common/logging/log.h"
-#include "citraimport\common/memory_util.h"
+#include "citraimport/common/logging/log.h"
+#include "citraimport/common/memory_util.h"
 
 #ifdef _WIN32
     #include <windows.h>
     #include <psapi.h>
-    #include "citraimport\common/common_funcs.h"
-    #include "citraimport\common/string_util.h"
+    #include "citraimport/common/common_funcs.h"
+    #include "citraimport/common/string_util.h"
 #else
     #include <cstdlib>
     #include <sys/mman.h>

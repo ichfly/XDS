@@ -7,8 +7,8 @@
 #include <tuple>
 #include <utility>
 
-#include "citraimport\common/common_types.h"
-#include "citraimport\common/math_util.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/math_util.h"
 
 namespace KeyMap {
 struct HostDeviceKey;

@@ -10,16 +10,16 @@
 
 #include <citraimport/settings.h>
 
-#include "citraimport\GPU\video_core/clipper.h"
-#include "citraimport\GPU\video_core/command_processor.h"
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/primitive_assembly.h"
-#include "citraimport\GPU\video_core/renderer_base.h"
-#include "citraimport\GPU\video_core/video_core.h"
-#include "citraimport\GPU\video_core/debug_utils/debug_utils.h"
-#include "citraimport\GPU\video_core/shader/shader_interpreter.h"
+#include "citraimport/GPU/video_core/clipper.h"
+#include "citraimport/GPU/video_core/command_processor.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/primitive_assembly.h"
+#include "citraimport/GPU/video_core/renderer_base.h"
+#include "citraimport/GPU/video_core/video_core.h"
+#include "citraimport/GPU/video_core/debug_utils/debug_utils.h"
+#include "citraimport/GPU/video_core/shader/shader_interpreter.h"
 
-#include "citraimport\GPU\HW\gpu.h"
+#include "citraimport/GPU/HW/gpu.h"
 
 u8* Mem_GetPhysicalPointer(u32 addr);
 extern "C" void citraFireInterrupt(int id);

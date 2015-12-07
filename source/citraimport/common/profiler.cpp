@@ -8,10 +8,10 @@
 #include <cstddef>
 #include <vector>
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/profiler.h"
-#include "citraimport\common/profiler_reporting.h"
-#include "citraimport\common/synchronized_wrapper.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/profiler.h"
+#include "citraimport/common/profiler_reporting.h"
+#include "citraimport/common/synchronized_wrapper.h"
 
 #if defined(_MSC_VER) && _MSC_VER <= 1800 // MSVC 2013.
     #define WIN32_LEAN_AND_MEAN

@@ -8,7 +8,7 @@
 #include <string>
 #include <utility>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 struct TSymbol
 {

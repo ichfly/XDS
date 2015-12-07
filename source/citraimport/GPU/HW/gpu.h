@@ -7,10 +7,10 @@
 #include <cstddef>
 #include <type_traits>
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/bit_field.h"
-#include "citraimport\common/common_funcs.h"
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/bit_field.h"
+#include "citraimport/common/common_funcs.h"
+#include "citraimport/common/common_types.h"
 
 namespace GPU {
 

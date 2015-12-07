@@ -12,9 +12,9 @@
 #include <sys/time.h>
 #endif
 
-#include "citraimport\common\common_types.h"
-#include "citraimport\common/string_util.h"
-#include "citraimport\common/timer.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/string_util.h"
+#include "citraimport/common/timer.h"
 
 /*namespace Common
 {

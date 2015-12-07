@@ -9,12 +9,12 @@
 #include <cstddef>
 #include <string>
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/bit_field.h"
-#include "citraimport\common/common_funcs.h"
-#include "citraimport\common/common_types.h"
-#include "citraimport\common/vector_math.h"
-#include "citraimport\common/logging/log.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/bit_field.h"
+#include "citraimport/common/common_funcs.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/vector_math.h"
+#include "citraimport/common/logging/log.h"
 
 namespace Pica {
 

@@ -3,18 +3,19 @@
 // Refer to the license.txt file included.
 
 #include <memory>
+#include <cstring>
 #include <unordered_map>
 
 //#include <boost/range/algorithm/fill.hpp>
 
-#include "citraimport\common/hash.h"
-#include "citraimport\common/make_unique.h"
-#include "citraimport\common/microprofile.h"
-#include "citraimport\common/profiler.h"
+#include "citraimport/common/hash.h"
+#include "citraimport/common/make_unique.h"
+#include "citraimport/common/microprofile.h"
+#include "citraimport/common/profiler.h"
 
-#include "citraimport\GPU\video_core/debug_utils/debug_utils.h"
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/video_core.h"
+#include "citraimport/GPU/video_core/debug_utils/debug_utils.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/video_core.h"
 
 #include "shader.h"
 #include "shader_interpreter.h"

@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <citraimport\glad\include\glad/glad.h>
+#include <citraimport/glad/include/glad/glad.h>
 
 namespace ShaderUtil {
 

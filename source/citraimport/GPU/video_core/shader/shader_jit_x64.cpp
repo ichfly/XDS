@@ -4,9 +4,9 @@
 
 #include <smmintrin.h>
 
-#include "citraimport\common/x64/abi.h"
-#include "citraimport\common/x64/cpu_detect.h"
-#include "citraimport\common/x64/emitter.h"
+#include "citraimport/common/x64/abi.h"
+#include "citraimport/common/x64/cpu_detect.h"
+#include "citraimport/common/x64/emitter.h"
 
 #include "shader.h"
 #include "shader_jit_x64.h"

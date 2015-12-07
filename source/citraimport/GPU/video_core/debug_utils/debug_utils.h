@@ -12,9 +12,9 @@
 #include <mutex>
 #include <vector>
 
-#include "citraimport\common/vector_math.h"
+#include "citraimport/common/vector_math.h"
 
-#include "citraimport\GPU\video_core/pica.h"
+#include "citraimport/GPU/video_core/pica.h"
 
 namespace Pica {
 

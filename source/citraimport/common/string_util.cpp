@@ -9,14 +9,14 @@
 #include <cstring>
 //#include <boost/range/algorithm/transform.hpp>
 
-#include "citraimport\common/common_paths.h"
-#include "citraimport\common/logging/log.h"
-#include "citraimport\common/string_util.h"
+#include "citraimport/common/common_paths.h"
+#include "citraimport/common/logging/log.h"
+#include "citraimport/common/string_util.h"
 
 #ifdef _MSC_VER
     #include <Windows.h>
     #include <codecvt>
-    #include "citraimport\common/common_funcs.h"
+    #include "citraimport/common/common_funcs.h"
 #else
     #include <iconv.h>
 #endif

@@ -11,7 +11,7 @@
 #include <string>
 #include <vector>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 namespace Common {
 

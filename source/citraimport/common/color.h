@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include "citraimport\common/common_types.h"
-#include "citraimport\common/swap.h"
-#include "citraimport\common/vector_math.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/swap.h"
+#include "citraimport/common/vector_math.h"
 
 namespace Color {
 

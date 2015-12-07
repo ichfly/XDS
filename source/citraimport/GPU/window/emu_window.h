@@ -7,8 +7,8 @@
 #include <tuple>
 #include <utility>
 
-#include "citraimport\math_util.h"
-#include "common.h"
+#include "citraimport/math_util.h"
+#include "Common.h"
 
 /*#include "common/common_types.h"
 #include "common/math_util.h"

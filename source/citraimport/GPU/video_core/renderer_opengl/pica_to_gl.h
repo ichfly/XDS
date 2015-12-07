@@ -4,11 +4,11 @@
 
 #pragma once
 
-#include <citraimport\glad\include/glad/glad.h>
+#include <citraimport/glad/include/glad/glad.h>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
-#include "citraimport\GPU\video_core/pica.h"
+#include "citraimport/GPU/video_core/pica.h"
 
 namespace PicaToGL {
 

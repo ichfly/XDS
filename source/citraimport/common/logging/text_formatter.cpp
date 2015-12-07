@@ -10,13 +10,13 @@
 #   include <Windows.h>
 #endif
 
-#include "citraimport\common/logging/backend.h"
-#include "citraimport\common/logging/log.h"
-#include "citraimport\common/logging/text_formatter.h"
+#include "citraimport/common/logging/backend.h"
+#include "citraimport/common/logging/log.h"
+#include "citraimport/common/logging/text_formatter.h"
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/common_funcs.h"
-#include "citraimport\common/string_util.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/common_funcs.h"
+#include "citraimport/common/string_util.h"
 
 namespace Log {
 

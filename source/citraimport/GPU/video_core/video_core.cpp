@@ -3,10 +3,10 @@
 // Refer to the license.txt file included.
 
 
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/renderer_base.h"
-#include "citraimport\GPU\video_core/video_core.h"
-#include "citraimport\GPU\video_core/renderer_opengl/renderer_opengl.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/renderer_base.h"
+#include "citraimport/GPU/video_core/video_core.h"
+#include "citraimport/GPU/video_core/renderer_opengl/renderer_opengl.h"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Video Core namespace

@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 namespace Log {
 

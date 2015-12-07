@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 // User directory indices for GetUserPath
 enum {

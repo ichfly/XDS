@@ -8,13 +8,13 @@
 
 //#include <boost/container/static_vector.hpp>
 
-#include <citraimport\nihstro/shader_binary.h>
+#include <citraimport/nihstro/shader_binary.h>
 
-#include "citraimport\common/common_funcs.h"
-#include "citraimport\common/common_types.h"
-#include "citraimport\common/vector_math.h"
+#include "citraimport/common/common_funcs.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/vector_math.h"
 
-#include "citraimport\GPU\video_core/pica.h"
+#include "citraimport/GPU/video_core/pica.h"
 
 using nihstro::RegisterType;
 using nihstro::SourceRegister;

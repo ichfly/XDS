@@ -7,8 +7,8 @@
 #include <atomic>
 #include <chrono>
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/thread.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/thread.h"
 
 namespace Common {
 namespace Profiling {
