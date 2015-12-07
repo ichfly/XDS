@@ -6,9 +6,9 @@
 
 #include <memory>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
-#include "citraimport\GPU\video_core/hwrasterizer_base.h"
+#include "citraimport/GPU/video_core/hwrasterizer_base.h"
 
 class EmuWindow;
 

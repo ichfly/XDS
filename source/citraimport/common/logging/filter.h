@@ -8,7 +8,7 @@
 #include <cstddef>
 #include <string>
 
-#include "citraimport\common/logging/log.h"
+#include "citraimport/common/logging/log.h"
 
 namespace Log {
 

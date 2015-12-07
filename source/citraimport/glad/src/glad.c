@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <citraimport\glad\include\glad/glad.h>
+#include <citraimport/glad/include/glad/glad.h>
 
 static void* get_proc(const char *namez);
 

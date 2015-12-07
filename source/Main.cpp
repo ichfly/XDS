@@ -5,7 +5,7 @@
 #include "Gui.h"
 #include "Bootloader.h"
 
-#include "citraimport\GPU\window\emu_window_glfw.h"
+#include "citraimport/GPU/window/emu_window_glfw.h"
 
 namespace VideoCore {
 	void Init(EmuWindow* emu_window);

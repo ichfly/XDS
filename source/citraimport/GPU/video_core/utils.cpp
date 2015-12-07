@@ -5,7 +5,7 @@
 #include <cstdio>
 #include <cstring>
 
-#include "citraimport\GPU\video_core/utils.h"
+#include "citraimport/GPU/video_core/utils.h"
 
 namespace VideoCore {
 

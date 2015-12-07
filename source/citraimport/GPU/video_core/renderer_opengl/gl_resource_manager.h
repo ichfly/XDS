@@ -6,12 +6,12 @@
 
 #include <utility>
 
-#include <citraimport\glad\include\glad/glad.h>
+#include <citraimport/glad/include/glad/glad.h>
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
-#include "citraimport\GPU\video_core/renderer_opengl/gl_shader_util.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_state.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_shader_util.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_state.h"
 
 class OGLTexture : private NonCopyable {
 public:

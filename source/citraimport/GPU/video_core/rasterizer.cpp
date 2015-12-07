@@ -7,19 +7,19 @@
 #include <algorithm>
 #include <cmath>
 
-#include "citraimport\common/color.h"
-#include "citraimport\common/common_types.h"
-#include "citraimport\common/math_util.h"
-#include "citraimport\common/microprofile.h"
-#include "citraimport\common/profiler.h"
+#include "citraimport/common/color.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/math_util.h"
+#include "citraimport/common/microprofile.h"
+#include "citraimport/common/profiler.h"
 
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/rasterizer.h"
-#include "citraimport\GPU\video_core/utils.h"
-#include "citraimport\GPU\video_core/debug_utils/debug_utils.h"
-#include "citraimport\GPU\video_core/shader/shader_interpreter.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/rasterizer.h"
+#include "citraimport/GPU/video_core/utils.h"
+#include "citraimport/GPU/video_core/debug_utils/debug_utils.h"
+#include "citraimport/GPU/video_core/shader/shader_interpreter.h"
 
-#include "citraimport\GPU\HW\gpu.h"
+#include "citraimport/GPU/HW/gpu.h"
 
 u8* Mem_GetPhysicalPointer(u32 addr);
 
@@ -439,7 +439,7 @@ static void ProcessTriangleInternal(const Shader::OutputVertex& v0,
                 if (!texture.enabled)
                     continue;
 
-                assert(0 != texture.config.address);
+                ASSERT(0 != texture.config.address);
 
                 int s = (int)(uv[i].u() * float24::FromFloat32(static_cast<float>(texture.config.width))).ToFloat32();
                 int t = (int)(uv[i].v() * float24::FromFloat32(static_cast<float>(texture.config.height))).ToFloat32();

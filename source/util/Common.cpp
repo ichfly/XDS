@@ -10,6 +10,7 @@
 #include <iconv.h>
 #endif
 
+#include <sys/stat.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
@@ -134,7 +135,7 @@ namespace Common {
 #ifdef _WIN32
 				int ret = _mkdir(mname);
 #else
-				int ret = mkdir(p, 0777);
+				int ret = mkdir(mname, 0777);
 #endif
 				if (ret >0 && ret != EEXIST)
 				{

@@ -9,7 +9,7 @@ public:
 
     bool Synchronization(KThread* thread, u32 &error);
 
-	KProcess::~KProcess();
+	~KProcess();
 
     KProcess(KCodeSet* code, u32 capabilities_num, u32* capabilities_ptr, KKernel* Kernel,bool );
 

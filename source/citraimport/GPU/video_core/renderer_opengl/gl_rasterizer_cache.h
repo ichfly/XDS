@@ -7,10 +7,10 @@
 #include <map>
 #include <memory>
 
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/debug_utils/debug_utils.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_resource_manager.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_state.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/debug_utils/debug_utils.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_resource_manager.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_state.h"
 
 class RasterizerCacheOpenGL : NonCopyable {
 public:

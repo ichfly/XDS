@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "citraimport\common/bit_set.h"
+#include "citraimport/common/bit_set.h"
 #include "emitter.h"
 
 // x64 ABI:s, and helpers to help follow them when JIT-ing code.

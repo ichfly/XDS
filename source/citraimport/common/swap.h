@@ -25,7 +25,7 @@
     #include <sys/endian.h>
 #endif
 
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 // GCC 4.6+
 #if __GNUC__ >= 5 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6)

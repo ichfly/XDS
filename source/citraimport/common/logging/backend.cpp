@@ -6,12 +6,12 @@
 #include <array>
 #include <cstdio>
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/common_funcs.h" // snprintf compatibility define
-#include "citraimport\common/logging/backend.h"
-#include "citraimport\common/logging/filter.h"
-#include "citraimport\common/logging/log.h"
-#include "citraimport\common/logging/text_formatter.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/common_funcs.h" // snprintf compatibility define
+#include "citraimport/common/logging/backend.h"
+#include "citraimport/common/logging/filter.h"
+#include "citraimport/common/logging/log.h"
+#include "citraimport/common/logging/text_formatter.h"
 
 namespace Log {
 

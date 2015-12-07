@@ -8,7 +8,7 @@
 #endif
 #include <initializer_list>
 #include <type_traits>
-#include "citraimport\common/common_types.h"
+#include "citraimport/common/common_types.h"
 
 // namespace avoids conflict with OS X Carbon; don't use BitSet<T> directly
 namespace Common {

@@ -17,10 +17,10 @@
 
 #pragma once
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/bit_set.h"
-#include "citraimport\common/common_types.h"
-#include "citraimport\common/code_block.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/bit_set.h"
+#include "citraimport/common/common_types.h"
+#include "citraimport/common/code_block.h"
 
 #if defined(ARCHITECTURE_x86_64) && !defined(_ARCH_64)
 #define _ARCH_64

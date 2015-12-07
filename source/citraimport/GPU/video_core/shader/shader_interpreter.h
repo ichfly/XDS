@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "citraimport\GPU\video_core/shader/shader.h"
+#include "citraimport/GPU/video_core/shader/shader.h"
 
 namespace Pica {
 

@@ -5,8 +5,8 @@
 #include <cstring>
 #include <unordered_map>
 
-#include "citraimport\GPU\video_core/pica.h"
-#include "citraimport\GPU\video_core/shader/shader.h"
+#include "citraimport/GPU/video_core/pica.h"
+#include "citraimport/GPU/video_core/shader/shader.h"
 
 namespace Pica {
 

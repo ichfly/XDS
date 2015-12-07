@@ -2,11 +2,11 @@
 // Licensed under GPLv2 or any later version
 // Refer to the license.txt file included.
 
-#include "citraimport\common/assert.h"
-#include "citraimport\common/common_funcs.h"
-#include "citraimport\common/common_paths.h"
-#include "citraimport\common/file_util.h"
-#include "citraimport\common/logging/log.h"
+#include "citraimport/common/assert.h"
+#include "citraimport/common/common_funcs.h"
+#include "citraimport/common/common_paths.h"
+#include "citraimport/common/file_util.h"
+#include "citraimport/common/logging/log.h"
 
 #ifdef _WIN32
     #include <windows.h>
@@ -17,7 +17,7 @@
     #include <direct.h> // getcwd
     #include <tchar.h>
 
-    #include "citraimport\common/string_util.h"
+    #include "citraimport/common/string_util.h"
 
     // 64 bit offsets for windows
     #define fseeko _fseeki64

@@ -6,8 +6,8 @@
 
 #include <cstdlib>
 
-#include "citraimport\common/common_funcs.h"
-#include "citraimport\common/logging/log.h"
+#include "citraimport/common/common_funcs.h"
+#include "citraimport/common/logging/log.h"
 
 // For asserts we'd like to keep all the junk executed when an assert happens away from the
 // important code in the function. One way of doing this is to put all the relevant code inside a

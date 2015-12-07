@@ -7,8 +7,8 @@
 #include <cstddef>
 #include <vector>
 
-#include "citraimport\common/profiler.h"
-#include "citraimport\common/synchronized_wrapper.h"
+#include "citraimport/common/profiler.h"
+#include "citraimport/common/synchronized_wrapper.h"
 
 namespace Common {
 namespace Profiling {

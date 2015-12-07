@@ -4,9 +4,9 @@
 
 #include <algorithm>
 
-#include "citraimport\common/logging/filter.h"
-#include "citraimport\common/logging/backend.h"
-#include "citraimport\common/string_util.h"
+#include "citraimport/common/logging/filter.h"
+#include "citraimport/common/logging/backend.h"
+#include "citraimport/common/string_util.h"
 
 namespace Log {
 

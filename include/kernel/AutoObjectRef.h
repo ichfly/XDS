@@ -1,6 +1,6 @@
 class KAutoObjectRef {
 public:
-	KAutoObjectRef::KAutoObjectRef(const KAutoObjectRef &obj);
+	KAutoObjectRef(const KAutoObjectRef &obj);
     KAutoObjectRef();
     KAutoObjectRef(KAutoObject* object);
     ~KAutoObjectRef();

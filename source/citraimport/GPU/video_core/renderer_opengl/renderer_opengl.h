@@ -9,10 +9,10 @@
 //#include <glad/glad.h>
 
 
-#include "citraimport\GPU\video_core/renderer_base.h"
-#include "citraimport\GPU\video_core/renderer_opengl/gl_state.h"
+#include "citraimport/GPU/video_core/renderer_base.h"
+#include "citraimport/GPU/video_core/renderer_opengl/gl_state.h"
 
-#include "citraimport\GPU\HW/gpu.h"
+#include "citraimport/GPU/HW/gpu.h"
 
 class EmuWindow;
 

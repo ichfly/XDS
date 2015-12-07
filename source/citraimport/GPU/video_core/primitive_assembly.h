@@ -6,7 +6,7 @@
 
 #include <functional>
 
-#include "citraimport\GPU\video_core/pica.h"
+#include "citraimport/GPU/video_core/pica.h"
 
 namespace Pica {
 

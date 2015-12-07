@@ -6,7 +6,7 @@
 #include <cmath>
 
 
-#include "citraimport\GPU\window\emu_window.h"
+#include "citraimport/GPU/window/emu_window.h"
 
 /* //hid todo
 void EmuWindow::KeyPressed(KeyMap::HostDeviceKey key) {

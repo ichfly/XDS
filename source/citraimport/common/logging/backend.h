@@ -9,7 +9,7 @@
 #include <string>
 #include <utility>
 
-#include "citraimport\common/logging/log.h"
+#include "citraimport/common/logging/log.h"
 
 namespace Log {
 
