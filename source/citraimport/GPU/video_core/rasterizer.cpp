@@ -439,7 +439,7 @@ static void ProcessTriangleInternal(const Shader::OutputVertex& v0,
                 if (!texture.enabled)
                     continue;
 
-                ASSERT(0 != texture.config.address);
+				assert(0 != texture.config.address);
 
                 int s = (int)(uv[i].u() * float24::FromFloat32(static_cast<float>(texture.config.width))).ToFloat32();
                 int t = (int)(uv[i].v() * float24::FromFloat32(static_cast<float>(texture.config.height))).ToFloat32();
