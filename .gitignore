@@ -227,3 +227,6 @@ include/GL/glcorearb.h
 include/GL/gl3w.h
 *.autosave
 external/*
+
+!windows/xds/xds.vcxproj.filters
+!windows/xds/xds.vcxproj

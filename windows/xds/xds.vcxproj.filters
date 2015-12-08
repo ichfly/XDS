@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\kernel">
+      <UniqueIdentifier>{623eb22a-f60d-4a20-9e92-3979d76595b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arm">
+      <UniqueIdentifier>{4fe457d1-ceb5-409d-84cf-a1911267eaf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arm\skyeye_common">
+      <UniqueIdentifier>{7e1621f6-7854-47fc-9d82-2bc5c208ae40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arm\skyeye_common\vfp">
+      <UniqueIdentifier>{08151f03-e45e-4dba-af6d-99ad8d0b01cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arm\skyeye_common\interpreter">
+      <UniqueIdentifier>{2f20cf62-abb6-4862-bff2-fb62b8deb1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arm\skyeye_common\dyncom">
+      <UniqueIdentifier>{36f858dd-b843-4126-8c7d-9de75a11b234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arm\skyeye_common\disassembler">
+      <UniqueIdentifier>{79422764-d3be-48f3-9584-129a2ab458cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arm">
+      <UniqueIdentifier>{10614ff5-150e-46c7-9c54-16861cdfa53b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\kernel">
+      <UniqueIdentifier>{179e18cf-1739-44ab-bbe3-7eb8261b69d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{32802e89-89cf-43dd-a053-47402500ed30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{f6fe027e-b504-4285-976e-399dba8c2eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arm\interpreter">
+      <UniqueIdentifier>{a5df2270-d9f0-4040-9b10-015647fee2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hardware">
+      <UniqueIdentifier>{9c307d7a-2791-4336-a8c9-0147c371530f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hardware">
+      <UniqueIdentifier>{382047ba-4098-46c0-b612-519db3036a59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\process9">
+      <UniqueIdentifier>{e7e613f3-dec0-4aeb-9125-8dc4bb5cc1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\process9">
+      <UniqueIdentifier>{dc2e250f-bba4-4e2a-a910-22f497d916f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arm\skyeye_common">
+      <UniqueIdentifier>{c1e42c27-9ab5-41f8-aa5e-f28b4865785d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\process9\archive">
+      <UniqueIdentifier>{6dd721ff-0a84-478b-80c4-f16301eefc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\process9\archive">
+      <UniqueIdentifier>{9d5b48a7-b930-4b5d-ac21-ce2fec6fda1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{77088b69-1a15-4561-94fc-0e4190334709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{cfaf96de-a351-4271-a656-e539c9fe3afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Files">
+      <UniqueIdentifier>{46f4de3a-f782-49a2-9492-64cb1c1af867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Files\imgui">
+      <UniqueIdentifier>{367fe785-ec91-4b0f-91b1-562917affe1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Files\gl3w">
+      <UniqueIdentifier>{b013cb66-cc5e-4e0d-87f6-1fdee1c05812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hardware\i2c">
+      <UniqueIdentifier>{b35ae2d7-256c-4d64-aac8-95c28f84c92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hardware\i2c">
+      <UniqueIdentifier>{7625735c-488f-4669-8b19-aa47b7b596b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hardware\GPU">
+      <UniqueIdentifier>{e6437f6e-5d52-4083-a151-5388c6af9f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hardware\GPU">
+      <UniqueIdentifier>{a97ccd93-4cc0-4165-a938-599113404970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citraimport">
+      <UniqueIdentifier>{8c09cb90-802e-494c-8e4c-1a3984025eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citraimport\GPU">
+      <UniqueIdentifier>{03b6769b-066f-4036-983e-1c916efdbe29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citraimport\GPU\EMUWindow">
+      <UniqueIdentifier>{f63e9a8e-b22d-4bd7-b6ba-0bce6e32ca8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citraimport\common">
+      <UniqueIdentifier>{df7f13d0-1d8b-4d6e-8b9a-5bd055dc3362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citraimport\common\loging">
+      <UniqueIdentifier>{f28c6a93-11db-4407-acda-9cbb99a6a798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\citraimport\common\x64">
+      <UniqueIdentifier>{0bd598af-7f9f-438b-a3b4-be6f51772b25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Kernel.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\MemoryMap.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Process.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\SynchronizationObject.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\AutoObject.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\AutoObjectRef.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\HandleTable.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\ArmCore.cpp">
+      <Filter>Source Files\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfpinstr.cpp">
+      <Filter>Source Files\arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfpsingle.cpp">
+      <Filter>Source Files\arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfp.cpp">
+      <Filter>Source Files\arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfpdouble.cpp">
+      <Filter>Source Files\arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\arminit.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\armsupp.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\armvirt.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\thumbemu.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\arm_interpreter.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\armcopro.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\interpreter\armemu.cpp">
+      <Filter>Source Files\arm\skyeye_common\interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_interpreter.cpp">
+      <Filter>Source Files\arm\skyeye_common\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_run.cpp">
+      <Filter>Source Files\arm\skyeye_common\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_thumb.cpp">
+      <Filter>Source Files\arm\skyeye_common\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom.cpp">
+      <Filter>Source Files\arm\skyeye_common\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_dec.cpp">
+      <Filter>Source Files\arm\skyeye_common\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\disassembler\arm_disasm.cpp">
+      <Filter>Source Files\arm\skyeye_common\disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\util\Common.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\ResourceLimit.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\CodeSet.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Bootloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Thread.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Scheduler.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Memory.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Swi.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\AddressArbiter.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Event.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Semaphore.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\IPC.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\PXI.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Mutex.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\util\CMutex.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Interrupt.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\ServerPort.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\ClientPort.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Port.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\ServerSession.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Session.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\ClientSession.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_supp.cpp">
+      <Filter>Source Files\arm\skyeye_common\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\fs.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\pm.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archivep.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive567890b0.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive2345678e.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\util\LowPath.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\file.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive1234567c.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\ps.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\HASH.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\SharedMemory.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive2345678a.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\DmaObject.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\kernel\Timer.cpp">
+      <Filter>Source Files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gui\MainWindow.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui.cpp">
+      <Filter>External Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\gl3w\src\gl3w.c">
+      <Filter>External Files\gl3w</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\gui\imgui_impl_glfw_gl3.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\mc.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive1234567e.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive1234567d.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\I2C.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\i2c\Bus2.cpp">
+      <Filter>Source Files\hardware\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\i2c\Bus3.cpp">
+      <Filter>Source Files\hardware\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\i2c\Bus1.cpp">
+      <Filter>Source Files\hardware\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\GPIO.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\PDN.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\SPI.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\am.cpp">
+      <Filter>Source Files\process9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\DSP.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\GPU\Syn.cpp">
+      <Filter>Source Files\hardware\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\process9\archive\archive1234567b.cpp">
+      <Filter>Source Files\process9\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\window\emu_window_glfw.cpp">
+      <Filter>Source Files\citraimport\GPU\EMUWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\clipper.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\command_processor.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\debug_utils\debug_utils.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\emu_window.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer_cache.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_shader_util.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_state.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\glad\src\glad.c">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\pica.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\primitive_assembly.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\rasterizer.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\renderer_opengl.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\shader\shader.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\shader\shader_interpreter.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\shader\shader_jit_x64.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\utils.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\video_core.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\memory_util.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\microprofile.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\misc.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\profiler.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\string_util.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\symbols.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\break_points.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\file_util.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\citra_hash.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\citra_timer.cpp">
+      <Filter>Source Files\citraimport\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\logging\filter.cpp">
+      <Filter>Source Files\citraimport\common\loging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\logging\text_formatter.cpp">
+      <Filter>Source Files\citraimport\common\loging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\logging\backend.cpp">
+      <Filter>Source Files\citraimport\common\loging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\x64\cpu_detect.cpp">
+      <Filter>Source Files\citraimport\common\x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\x64\emitter.cpp">
+      <Filter>Source Files\citraimport\common\x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\common\x64\abi.cpp">
+      <Filter>Source Files\citraimport\common\x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\settings.cpp">
+      <Filter>Source Files\citraimport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\GPU.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\citraimport\GPU\citragpu.cpp">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\HID.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\hardware\MIC.cpp">
+      <Filter>Source Files\hardware</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\arm\ArmCore.h">
+      <Filter>Header Files\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\HandleTable.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Kernel.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\LinkedList.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\MemoryMap.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Process.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\SynchronizationObject.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\AutoObject.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\AutoObjectRef.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\ResourceLimit.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\CodeSet.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Bootloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Thread.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Scheduler.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Memory.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\util\Common.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\util\Mutex.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Swi.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\arm\interpreter\arm_interpreter.h">
+      <Filter>Header Files\arm\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\IPC.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Hardware.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\AddressArbiter.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Event.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Semaphore.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\IO.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Process9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\PXI.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Mutex.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Interrupt.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\ServerPort.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\ClientPort.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Port.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Session.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\ClientSession.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\ServerSession.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\arm\skyeye_common\arm_regformat.h">
+      <Filter>Header Files\arm\skyeye_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\p9fs.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\pm.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archivep.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive567890b0.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive2345678e.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\util\LowPath.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\file.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive1234567c.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\ps.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\HASH.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\SharedMemory.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive2345678a.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\DmaObject.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\Timer.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\gui\MainWindow.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\mc.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive1234567e.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive1234567d.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\I2C.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\i2c\Bus2.h">
+      <Filter>Header Files\hardware\i2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\i2c\Bus3.h">
+      <Filter>Header Files\hardware\i2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\i2c\Bus1.h">
+      <Filter>Header Files\hardware\i2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\GPIO.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\PDN.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\SPI.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\am.h">
+      <Filter>Header Files\process9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\DSP.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kernel\TimedEvent.h">
+      <Filter>Header Files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\GPU.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\GPU\Syn.h">
+      <Filter>Header Files\hardware\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\process9\archive\archive1234567b.h">
+      <Filter>Header Files\process9\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\clipper.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\command_processor.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\debug_utils\debug_utils.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer_cache.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_resource_manager.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_shader_util.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_shaders.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_state.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\gpu_debugger.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\hwrasterizer_base.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\pica.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\pica_to_gl.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\primitive_assembly.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\rasterizer.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_base.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\renderer_opengl.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\shader\shader.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\shader\shader_interpreter.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\shader\shader_jit_x64.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\utils.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\video_core.h">
+      <Filter>Source Files\citraimport\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\HID.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hardware\MIC.h">
+      <Filter>Header Files\hardware</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

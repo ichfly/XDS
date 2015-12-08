@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09D06FBC-3840-460A-A62F-915E9976D3DD}</ProjectGuid>
+    <RootNamespace>xds</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\external\glfw-3.1.1\include;..\..\external\gl3w\include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\..\external\glfw-3.1.1\lib-msvc_v120-Win32</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\external\glfw-3.1.1\include;..\..\external\gl3w\include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\..\external\glfw-3.1.1\lib-msvc_v120-Win32</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\external\glfw-3.1.1\include;..\..\external\gl3w\include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);..\..\external\glfw-3.1.1\lib-msvc_v120-Win32</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include;..\..\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw3dll.a;libglfw3.a;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\xds\external\glfw-3.1.1\lib-mingw-i686</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include;..\..\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw3dll.a;libglfw3.a;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\xds\external\glfw-3.1.1\lib-mingw-x86_64</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\include;..\..\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\xds\external\glfw-3.1.1\lib-mingw-i686</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw3dll.a;libglfw3.a;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\gl3w\src\gl3w.c" />
+    <ClCompile Include="..\..\external\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\source\arm\ArmCore.cpp" />
+    <ClCompile Include="..\..\source\arm\disassembler\arm_disasm.cpp" />
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom.cpp" />
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_dec.cpp" />
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_interpreter.cpp" />
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_run.cpp" />
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_supp.cpp" />
+    <ClCompile Include="..\..\source\arm\dyncom\arm_dyncom_thumb.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\armcopro.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\armemu.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\arminit.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\armsupp.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\armvirt.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\arm_interpreter.cpp" />
+    <ClCompile Include="..\..\source\arm\interpreter\thumbemu.cpp" />
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfp.cpp" />
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfpdouble.cpp" />
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfpinstr.cpp" />
+    <ClCompile Include="..\..\source\arm\skyeye_common\vfp\vfpsingle.cpp" />
+    <ClCompile Include="..\..\source\Bootloader.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\break_points.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\file_util.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\citra_hash.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\logging\backend.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\logging\filter.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\logging\text_formatter.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\memory_util.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\microprofile.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\misc.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\profiler.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\string_util.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\symbols.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\citra_timer.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\x64\abi.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\x64\cpu_detect.cpp" />
+    <ClCompile Include="..\..\source\citraimport\common\x64\emitter.cpp" />
+    <ClCompile Include="..\..\source\citraimport\emu_window.cpp" />
+    <ClCompile Include="..\..\source\citraimport\glad\src\glad.c" />
+    <ClCompile Include="..\..\source\citraimport\GPU\citragpu.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\clipper.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\command_processor.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\debug_utils\debug_utils.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\pica.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\primitive_assembly.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\rasterizer.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer_cache.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_shader_util.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_state.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\renderer_opengl.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\shader\shader.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\shader\shader_interpreter.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\shader\shader_jit_x64.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\utils.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\video_core\video_core.cpp" />
+    <ClCompile Include="..\..\source\citraimport\GPU\window\emu_window_glfw.cpp" />
+    <ClCompile Include="..\..\source\citraimport\settings.cpp" />
+    <ClCompile Include="..\..\source\gui\imgui_impl_glfw_gl3.cpp" />
+    <ClCompile Include="..\..\source\gui\MainWindow.cpp" />
+    <ClCompile Include="..\..\source\hardware\DSP.cpp" />
+    <ClCompile Include="..\..\source\hardware\GPIO.cpp" />
+    <ClCompile Include="..\..\source\hardware\GPU.cpp" />
+    <ClCompile Include="..\..\source\hardware\GPU\Syn.cpp" />
+    <ClCompile Include="..\..\source\hardware\HASH.cpp" />
+    <ClCompile Include="..\..\source\hardware\HID.cpp" />
+    <ClCompile Include="..\..\source\hardware\I2C.cpp" />
+    <ClCompile Include="..\..\source\hardware\i2c\Bus1.cpp" />
+    <ClCompile Include="..\..\source\hardware\i2c\Bus2.cpp" />
+    <ClCompile Include="..\..\source\hardware\i2c\Bus3.cpp" />
+    <ClCompile Include="..\..\source\hardware\IPC.cpp" />
+    <ClCompile Include="..\..\source\hardware\MIC.cpp" />
+    <ClCompile Include="..\..\source\hardware\PDN.cpp" />
+    <ClCompile Include="..\..\source\hardware\SPI.cpp" />
+    <ClCompile Include="..\..\source\kernel\AddressArbiter.cpp" />
+    <ClCompile Include="..\..\source\kernel\AutoObject.cpp" />
+    <ClCompile Include="..\..\source\kernel\AutoObjectRef.cpp" />
+    <ClCompile Include="..\..\source\kernel\ClientPort.cpp" />
+    <ClCompile Include="..\..\source\kernel\ClientSession.cpp" />
+    <ClCompile Include="..\..\source\kernel\CodeSet.cpp" />
+    <ClCompile Include="..\..\source\kernel\DmaObject.cpp" />
+    <ClCompile Include="..\..\source\kernel\Event.cpp" />
+    <ClCompile Include="..\..\source\kernel\HandleTable.cpp" />
+    <ClCompile Include="..\..\source\kernel\Interrupt.cpp" />
+    <ClCompile Include="..\..\source\kernel\Kernel.cpp" />
+    <ClCompile Include="..\..\source\kernel\Memory.cpp" />
+    <ClCompile Include="..\..\source\kernel\MemoryMap.cpp" />
+    <ClCompile Include="..\..\source\kernel\Mutex.cpp" />
+    <ClCompile Include="..\..\source\kernel\Port.cpp" />
+    <ClCompile Include="..\..\source\kernel\Process.cpp" />
+    <ClCompile Include="..\..\source\kernel\ResourceLimit.cpp" />
+    <ClCompile Include="..\..\source\kernel\Scheduler.cpp" />
+    <ClCompile Include="..\..\source\kernel\Semaphore.cpp" />
+    <ClCompile Include="..\..\source\kernel\ServerPort.cpp" />
+    <ClCompile Include="..\..\source\kernel\ServerSession.cpp" />
+    <ClCompile Include="..\..\source\kernel\Session.cpp" />
+    <ClCompile Include="..\..\source\kernel\SharedMemory.cpp" />
+    <ClCompile Include="..\..\source\kernel\Swi.cpp" />
+    <ClCompile Include="..\..\source\kernel\SynchronizationObject.cpp" />
+    <ClCompile Include="..\..\source\kernel\Thread.cpp" />
+    <ClCompile Include="..\..\source\kernel\Timer.cpp" />
+    <ClCompile Include="..\..\source\Main.cpp" />
+    <ClCompile Include="..\..\source\process9\am.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive1234567b.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive1234567c.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive1234567d.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive1234567e.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive2345678a.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive2345678e.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archive567890b0.cpp" />
+    <ClCompile Include="..\..\source\process9\archive\archivep.cpp" />
+    <ClCompile Include="..\..\source\process9\file.cpp" />
+    <ClCompile Include="..\..\source\process9\fs.cpp" />
+    <ClCompile Include="..\..\source\process9\mc.cpp" />
+    <ClCompile Include="..\..\source\process9\pm.cpp" />
+    <ClCompile Include="..\..\source\process9\ps.cpp" />
+    <ClCompile Include="..\..\source\process9\PXI.cpp" />
+    <ClCompile Include="..\..\source\util\Common.cpp" />
+    <ClCompile Include="..\..\source\util\CMutex.cpp" />
+    <ClCompile Include="..\..\source\util\LowPath.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\arm\ArmCore.h" />
+    <ClInclude Include="..\..\include\Bootloader.h" />
+    <ClInclude Include="..\..\include\Common.h" />
+    <ClInclude Include="..\..\include\Gui.h" />
+    <ClInclude Include="..\..\include\gui\MainWindow.h" />
+    <ClInclude Include="..\..\include\Hardware.h" />
+    <ClInclude Include="..\..\include\hardware\DSP.h" />
+    <ClInclude Include="..\..\include\hardware\GPIO.h" />
+    <ClInclude Include="..\..\include\hardware\GPU.h" />
+    <ClInclude Include="..\..\include\hardware\GPU\Syn.h" />
+    <ClInclude Include="..\..\include\hardware\HASH.h" />
+    <ClInclude Include="..\..\include\hardware\HID.h" />
+    <ClInclude Include="..\..\include\hardware\I2C.h" />
+    <ClInclude Include="..\..\include\hardware\i2c\Bus1.h" />
+    <ClInclude Include="..\..\include\hardware\i2c\Bus2.h" />
+    <ClInclude Include="..\..\include\hardware\i2c\Bus3.h" />
+    <ClInclude Include="..\..\include\hardware\IO.h" />
+    <ClInclude Include="..\..\include\hardware\IPC.h" />
+    <ClInclude Include="..\..\include\hardware\MIC.h" />
+    <ClInclude Include="..\..\include\hardware\PDN.h" />
+    <ClInclude Include="..\..\include\hardware\SPI.h" />
+    <ClInclude Include="..\..\include\Kernel.h" />
+    <ClInclude Include="..\..\include\kernel\AddressArbiter.h" />
+    <ClInclude Include="..\..\include\kernel\AutoObject.h" />
+    <ClInclude Include="..\..\include\kernel\AutoObjectRef.h" />
+    <ClInclude Include="..\..\include\kernel\ClientPort.h" />
+    <ClInclude Include="..\..\include\kernel\ClientSession.h" />
+    <ClInclude Include="..\..\include\kernel\CodeSet.h" />
+    <ClInclude Include="..\..\include\kernel\DmaObject.h" />
+    <ClInclude Include="..\..\include\kernel\Event.h" />
+    <ClInclude Include="..\..\include\kernel\HandleTable.h" />
+    <ClInclude Include="..\..\include\kernel\Interrupt.h" />
+    <ClInclude Include="..\..\include\kernel\Kernel.h" />
+    <ClInclude Include="..\..\include\kernel\LinkedList.h" />
+    <ClInclude Include="..\..\include\kernel\Memory.h" />
+    <ClInclude Include="..\..\include\kernel\MemoryMap.h" />
+    <ClInclude Include="..\..\include\kernel\Mutex.h" />
+    <ClInclude Include="..\..\include\kernel\Port.h" />
+    <ClInclude Include="..\..\include\kernel\Process.h" />
+    <ClInclude Include="..\..\include\kernel\ResourceLimit.h" />
+    <ClInclude Include="..\..\include\kernel\Scheduler.h" />
+    <ClInclude Include="..\..\include\kernel\Semaphore.h" />
+    <ClInclude Include="..\..\include\kernel\ServerPort.h" />
+    <ClInclude Include="..\..\include\kernel\ServerSession.h" />
+    <ClInclude Include="..\..\include\kernel\Session.h" />
+    <ClInclude Include="..\..\include\kernel\SharedMemory.h" />
+    <ClInclude Include="..\..\include\kernel\Swi.h" />
+    <ClInclude Include="..\..\include\kernel\SynchronizationObject.h" />
+    <ClInclude Include="..\..\include\kernel\Thread.h" />
+    <ClInclude Include="..\..\include\kernel\TimedEvent.h" />
+    <ClInclude Include="..\..\include\kernel\Timer.h" />
+    <ClInclude Include="..\..\include\Log.h" />
+    <ClInclude Include="..\..\include\Platform.h" />
+    <ClInclude Include="..\..\include\Process9.h" />
+    <ClInclude Include="..\..\include\process9\am.h" />
+    <ClInclude Include="..\..\include\process9\archive.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive1234567b.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive1234567c.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive1234567d.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive1234567e.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive2345678a.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive2345678e.h" />
+    <ClInclude Include="..\..\include\process9\archive\archive567890b0.h" />
+    <ClInclude Include="..\..\include\process9\archive\archivep.h" />
+    <ClInclude Include="..\..\include\process9\file.h" />
+    <ClInclude Include="..\..\include\process9\mc.h" />
+    <ClInclude Include="..\..\include\process9\p9fs.h" />
+    <ClInclude Include="..\..\include\process9\pm.h" />
+    <ClInclude Include="..\..\include\process9\ps.h" />
+    <ClInclude Include="..\..\include\process9\PXI.h" />
+    <ClInclude Include="..\..\include\Test.h" />
+    <ClInclude Include="..\..\include\Util.h" />
+    <ClInclude Include="..\..\include\util\Common.h" />
+    <ClInclude Include="..\..\include\util\LowPath.h" />
+    <ClInclude Include="..\..\include\util\Mutex.h" />
+    <ClInclude Include="..\..\source\arm\interpreter\arm_interpreter.h" />
+    <ClInclude Include="..\..\source\arm\skyeye_common\arm_regformat.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\clipper.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\command_processor.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\debug_utils\debug_utils.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\gpu_debugger.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\hwrasterizer_base.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\pica.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\primitive_assembly.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\rasterizer.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_base.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_rasterizer_cache.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_resource_manager.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_shaders.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_shader_util.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\gl_state.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\pica_to_gl.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\renderer_opengl\renderer_opengl.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\shader\shader.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\shader\shader_interpreter.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\shader\shader_jit_x64.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\utils.h" />
+    <ClInclude Include="..\..\source\citraimport\GPU\video_core\video_core.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
