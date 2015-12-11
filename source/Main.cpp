@@ -48,4 +48,4 @@ extern "C" void citraFireInterrupt(int id)
 }
 bool novideo = true;
 extern "C" int citraPressedkey = 0;
-extern "C" bool citraSettingSkipGSP = false;
+extern "C" bool citraSettingSkipGSP = true;

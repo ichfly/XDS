@@ -351,10 +351,11 @@ tdstate thumb_translate(addr_t addr, uint32_t instr, uint32_t* ainstr, uint32_t*
 				//e6ef1078 uxtb r1, r8
 
 				u32 subset[4] = { //Bit 12 - 15 dest Bit 0 - 3 src
-					0xe6ff0070, /* uxth */
-					0xe6ef0070, /* uxtb */
 					0xe6bf0070, /* sxth */
-					0xe6af0070 /* sxtb */
+					0xe6af0070, /* sxtb */
+					0xe6ff0070, /* uxth */
+					0xe6ef0070 /* uxtb */
+
 				};
 
 				if ((tinstr & 0xF00) == 0x200) //Bit(7) unsigned (set = sxt. cleared = uxt) Bit(6) byte (set = .xtb cleared = .xth) Bit 5-3 Rb src Bit 2-0 Rd dest
