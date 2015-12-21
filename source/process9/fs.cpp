@@ -35,7 +35,7 @@ void P9FS::Command(u32 data[], u32 numb)
 #ifdef LOGFS
 		char tmp[256];
 		LOG("FS OpenFile");
-		LOG("   archive_handle=%"PRIx64, handle);
+		LOG("   archive_handle=%" PRIx64, handle);
 		LOG("   flags = %s", P9File::FlagsToString(flags, tmp));
 #endif
 
@@ -82,7 +82,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		}
 
 #ifdef LOGFS
-		LOG("   p9file_handle=%"PRIx64, p9file_handle);
+		LOG("   p9file_handle=%" PRIx64, p9file_handle);
 #endif
 
 		resdata[0] = 0x000100C1;
@@ -103,7 +103,7 @@ void P9FS::Command(u32 data[], u32 numb)
 
 #ifdef LOGFS
 		LOG("FS DeleteFile");
-		LOG("   archive_handle=%"PRIx64, handle);
+		LOG("   archive_handle=%" PRIx64, handle);
 #endif
 
 		resdata[0] = 0x00020142;
@@ -152,8 +152,8 @@ void P9FS::Command(u32 data[], u32 numb)
 
 #ifdef LOGFS
 		LOG("FS ReadFile %08x %08x %08x", size, desc_read, ptr_read);
-		LOG("   file_handle=%"PRIx64, handle);
-		LOG("   file_offset=%"PRIx64, file_offset);
+		LOG("   file_handle=%" PRIx64, handle);
+		LOG("   file_offset=%" PRIx64, file_offset);
 #endif
 		resdata[0] = 0x00090142;
 		resdata[1] = 0xFFFFFFFF; //todo get the correct error
@@ -196,7 +196,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		u32 ptr_hashtable = data[5];
 #ifdef LOGFS
 		LOG("FS CalculateFileHashSHA256");
-		LOG("   file_handle=%"PRIx64, handle);
+		LOG("   file_handle=%" PRIx64, handle);
 		LOG("   size=%08X", size_hashtable);
 		LOG("   ptr=%08X", ptr_hashtable);
 #endif
@@ -233,7 +233,7 @@ void P9FS::Command(u32 data[], u32 numb)
 #ifdef LOGFS
 		LOG("FS WriteFile %08x %08x %08x", size, desc_write, ptr_write);
 		LOG("   file_handle=%08X", handle);
-		LOG("   file_offset=%"PRIx64, file_offset);
+		LOG("   file_offset=%" PRIx64, file_offset);
 #endif
 		resdata[0] = 0x000B0182;
 		resdata[1] = 0xFFFFFFFF; //todo get the correct error
@@ -280,7 +280,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		u32 out_ptr = data[8];
 #ifdef LOGFS
 		LOG("FS CalcSavegameMAC");
-		LOG("   file_handle=%"PRIx64, handle);
+		LOG("   file_handle=%" PRIx64, handle);
 		LOG("   in  size=%08X, ptr=%08X", in_size, in_ptr);
 		LOG("   out size=%08X, ptr=%08X", out_size, out_ptr);
 #endif
@@ -307,7 +307,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		resdata[1] = 0xFFFFFFFF; //todo get the correct error
 		u64 handle = (data[1] >> 0) | ((u64)(data[2]) << 32);
 #ifdef LOGFS
-		LOG("FS GetFileSize=%"PRIx64, handle);
+		LOG("FS GetFileSize=%" PRIx64, handle);
 #endif
 		auto a = m_fopen.list;
 		while (a)
@@ -334,8 +334,8 @@ void P9FS::Command(u32 data[], u32 numb)
 		u64 handle = (data[3] >> 0) | ((u64)(data[4]) << 32);
 #ifdef LOGFS
 		LOG("FS SetFileSize");
-		LOG("   file_handle=%"PRIx64, handle);
-		LOG("   size=%"PRIx64, size);
+		LOG("   file_handle=%" PRIx64, handle);
+		LOG("   size=%" PRIx64, size);
 #endif
 		auto a = m_fopen.list;
 		while (a)
@@ -356,7 +356,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		resdata[0] = 0x000F0040;
 		resdata[1] = 0xFFFFFFFF; //todo get the correct error
 		u64 handle = (data[1] >> 0) | ((u64)(data[2]) << 32);
-		LOG("CloseFile=%"PRIx64, handle);
+		LOG("CloseFile=%" PRIx64, handle);
 		auto a = m_fopen.list;
 		while (a)
 		{
@@ -399,7 +399,7 @@ void P9FS::Command(u32 data[], u32 numb)
 
 #ifdef LOGFS
         LOG("FS OpenArchive stub %08x %08x %08x %08x", data[1], data[2], data[3], data[4]);
-        LOG("   archive_handle=%"PRIx64, a->id);
+        LOG("   archive_handle=%" PRIx64, a->id);
 #endif
 		a->Archobj = NULL;
 		resdata[1] = 0;
@@ -472,7 +472,7 @@ void P9FS::Command(u32 data[], u32 numb)
 
 #ifdef LOGFS
 		LOG("FS CloseArchive - stubbed");
-		LOG("   archive_handle=%"PRIx64, handle);
+		LOG("   archive_handle=%" PRIx64, handle);
 #endif
 
 		auto a = m_open.list;
@@ -500,7 +500,7 @@ void P9FS::Command(u32 data[], u32 numb)
 		u64 handle = (data[1] >> 0) | ((u64)(data[2]) << 32);
 #ifdef LOGFS
 		LOG("FS Unk17 - stubbed");
-		LOG("   archive_handle=%"PRIx64, handle);
+		LOG("   archive_handle=%" PRIx64, handle);
 #endif
 		resdata[0] = 0x00170080;
 		resdata[1] = 0;
@@ -562,8 +562,8 @@ void P9FS::Command(u32 data[], u32 numb)
 
 #ifdef LOGFS
 		LOG("FS ReadFileWrapper (SHA-256 not implemented) %08x %08x %08x", size, alinement, size_hashtable);
-		LOG("   file_handle=%"PRIx64, handle);
-		LOG("   file_offset=%"PRIx64, file_offset);
+		LOG("   file_handle=%" PRIx64, handle);
+		LOG("   file_offset=%" PRIx64, file_offset);
 		LOG("   pointer=%08x", ptr_read);
 		LOG("   modulename=%s", m_owner->m_kernel->m_IPCFIFOAdresses[(desc_read >> 4) & 0xF]->m_process->GetName());
 #endif
@@ -616,7 +616,7 @@ void P9FS::Command(u32 data[], u32 numb)
 #ifdef LOGFS
 		LOG("FS WriteFileWrapper %08x %08x %08x %08x %08x", size, desc_write, ptr_write, unk, size_hashtable);
 		LOG("   file_handle=%08X", handle);
-		LOG("   file_offset=%"PRIx64, file_offset);
+		LOG("   file_offset=%" PRIx64, file_offset);
 #endif
 		resdata[0] = 0x000B0182;
 		resdata[1] = 0xFFFFFFFF; //todo get the correct error

@@ -617,7 +617,7 @@ void ProcessSwi(u8 swi, u32 Reg[15], KThread * currentThread)
         {
             Reg[0] = SVCERROR_INVALID_HANDLE;
 #ifdef SWILOG
-            LOG("Process %s thread %u WaitSynchronization1 (%08x %"PRIx64" | % 08x % 08x)", currentThread->m_owner->GetName(), currentThread->m_thread_id, handle, timeout, Reg[0], Reg[1]);
+            LOG("Process %s thread %u WaitSynchronization1 (%08x %" PRIx64 " | % 08x % 08x)", currentThread->m_owner->GetName(), currentThread->m_thread_id, handle, timeout, Reg[0], Reg[1]);
 #endif    
             return;
         }
@@ -626,7 +626,7 @@ void ProcessSwi(u8 swi, u32 Reg[15], KThread * currentThread)
         list->AddItem(th);
         currentThread->SyncStall(list, true);
 #ifdef SWILOG
-        LOG("Process %s thread %u WaitSynchronization1 (%08x %"PRIx64") stub", currentThread->m_owner->GetName(), currentThread->m_thread_id, handle, timeout);
+        LOG("Process %s thread %u WaitSynchronization1 (%08x %" PRIx64 ") stub", currentThread->m_owner->GetName(), currentThread->m_thread_id, handle, timeout);
 #endif    
         return;
     }
@@ -1850,7 +1850,7 @@ void ProcessSwi(u8 swi, u32 Reg[15], KThread * currentThread)
                 return;
             }
 #ifdef SWILOG
-            LOG("%08x -> %"PRIx64, data, value);
+            LOG("%08x -> %" PRIx64, data, value);
 #endif
             lim->SetMaxValue(data, value);
 

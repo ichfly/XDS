@@ -37,7 +37,7 @@ void P9PM::Command(u32 data[],u32 numb)
         }
         if (a)
         {
-            LOG("pm getexheader handle=%"PRIx64", titleid=%"PRIx64, handle, a->data->title);
+            LOG("pm getexheader handle=%" PRIx64 ", titleid=%" PRIx64, handle, a->data->title);
             KMemoryMap* map = m_owner->m_kernel->m_IPCFIFOAdresses[(data[3] >> 4) &0xF];
             resdata[1] = 0xE0000000;
             FILE * fd = openapp(a->data->title >> 32, (u32)a->data->title);
@@ -78,7 +78,7 @@ void P9PM::Command(u32 data[],u32 numb)
         else
         {
 #ifdef LOGPM
-            LOG("pm getexheader handle=%"PRIx64, handle);
+            LOG("pm getexheader handle=%" PRIx64, handle);
 #endif
             resdata[1] = 0xE0000000; //todo correct error
         }
